@@ -86,7 +86,7 @@ contract FundMe
     modifier ownerOnly
     {
         require(msg.sender == owner, "You are not an owner");
-        _; //_ means your functions definitions will be placed here 
+        _; //'_' means your functions definitions will be placed here 
     }
 
     function withdraw() payable ownerOnly public
